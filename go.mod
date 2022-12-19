@@ -13,7 +13,7 @@ require (
 	github.com/pion/randutil v0.1.0
 	github.com/pion/rtcp v1.2.10
 	github.com/pion/rtp v1.7.13
-	github.com/pion/sctp v1.8.3
+	github.com/pion/sctp v1.8.3-mk
 	github.com/pion/sdp/v3 v3.0.6
 	github.com/pion/srtp/v2 v2.0.10
 	github.com/pion/transport v0.13.1
@@ -22,3 +22,5 @@ require (
 	golang.org/x/crypto v0.0.0-20221010152910-d6f0a8c073c2 // indirect
 	golang.org/x/net v0.1.0
 )
+
+replace github.com/pion/sctp => github.com/masterjk/sctp v1.8.3-mk
