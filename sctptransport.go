@@ -415,3 +415,7 @@ func (r *SCTPTransport) association() *sctp.Association {
 	r.lock.RUnlock()
 	return association
 }
+
+func (r *SCTPTransport) Association() *sctp.Association {
+	return r.association()
+}
